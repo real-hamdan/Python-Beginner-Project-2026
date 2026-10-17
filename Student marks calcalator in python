@@ -1,0 +1,32 @@
+
+# Student Marks Calculator
+
+name = input("Enter student name: ")
+
+english = float(input("Enter English marks: "))
+math = float(input("Enter Math marks: "))
+computer = float(input("Enter Computer marks: "))
+
+total = english + math + computer
+percentage = (total / 300) * 100
+
+print("\n----- Student Result -----")
+print("Name:", name)
+print("Total Marks:", total, "/ 300")
+print("Percentage:", round(percentage, 2), "%")
+
+if percentage >= 80:
+    print("Grade: A")
+elif percentage >= 70:
+    print("Grade: B")
+elif percentage >= 60:
+    print("Grade: C")
+elif percentage >= 50:
+    print("Grade: D")
+else:
+    print("Grade: F")
+
+if percentage >= 50:
+    print("Result: Pass")
+else:
+    print("Result: Fail")
